@@ -20,27 +20,37 @@ h5{
     height:60px;
 }
 #logo-slot{
-    width:200px;
+    height:85%;
+    width:fit-content;
     align-self:flex-start;
-    background-color:gray;
+    align-items:flex-end;
+    background-color:var(--secondary);
 }
 #logo-slot h1{
+    margin:5px 10px 0px 50px;
     font-size:35px;
     text-align:right;
 }
 #top-nav{
+    height:100%;
+    width:auto;
     display: flex;
     flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    
 }
 #navlinks{
+    padding-left:25%;
     flex-direction:row;
     flex-wrap:wrap;
-    align-items: center;
     height:100%;
-    background-color:gray;
+    justify-items:right;
+
 }
 header nav ul {
-    height:100%;
+    display:flex;
+    align-items:center;
 }
 nav ul li{
     display:inline-block;
@@ -65,7 +75,9 @@ nav ul a:hover{
 nav ul a:hover::after{
     transform: scaleY(1);
 }
-
+main p{
+    margin-bottom:20px;
+}
 #main-container{
     display:flex;
     flex-direction:column;
@@ -73,7 +85,6 @@ nav ul a:hover::after{
 
 h1 {
     color:var(--primary);
-    background-color:lightgray;
 }
 #banner{
     display:flex;
@@ -82,6 +93,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content:right;
+    align-content:end;
 
 }
 hero h1{
@@ -98,8 +110,7 @@ hero h1{
 #aboutme,
 #work,
 #contact-me{
-    display:flex;
-    text-align: left; 
+    display:flex; 
     line-height: 1.1;
     height: 100%;
     margin:20px;
@@ -155,7 +166,7 @@ proj{
     
 }
 proj:hover{
-    background-blend-mode:normal;    
+    background-color:white;    
 }
 
 #big-card{
@@ -182,4 +193,19 @@ proj:hover{
     height:150px;
     width:50%;
     background-image:url("../images/02-run-buddy.jpg");
+}
+footer{
+    height:100px;
+    margin-bottom:50px;
+}
+footer nav a{
+    display: flex;
+    justify-content:center;
+}
+
+#fnavlinks{
+    height:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
 }
